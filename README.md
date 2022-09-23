@@ -86,3 +86,11 @@ Completing the project involves several steps:
 6. Create a CodeBuild stage which will build, test, and deploy your code
 
 For more detail about each of these steps, see the project lesson.
+
+## Secrets
+- .env_file:
+  Secrets are stored in a .env_file which cannot be shared to github due to security issues. An example of how the .env_file is shown:
+```
+JWT_SECRET='your_jwt_secret_goes_here'
+LOG_LEVEL=the_loglevel_of_the_app
+```
